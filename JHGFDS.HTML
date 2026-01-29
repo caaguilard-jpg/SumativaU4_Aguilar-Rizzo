@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Martin Luther King Jr.</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            background-color: #f2f2f2;
+            color: #333;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 30px;
+            background-color: #1f1f1f;
+            color: white;
+        }
+
+        nav a {
+            color: white;
+            margin-left: 15px;
+            text-decoration: none;
+        }
+
+        /* HERO CON IMAGEN DE FONDO */
+        .hero {
+            height: 100vh;
+            background-image: url("descarga-_3_.jpg");
+            background-size: cover;
+            background-position: center;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            text-align: center;
+            color: white;
+        }
+
+        .hero-text {
+            background-color: rgba(0, 0, 0, 0.55);
+            padding: 30px;
+            max-width: 600px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin-top: 15px;
+            cursor: pointer;
+        }
+
+        .content {
+            display: flex;
+            padding: 40px;
+            gap: 30px;
+        }
+
+        .left-column {
+            width: 30%;
+        }
+
+        .left-column img {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .right-column {
+            width: 70%;
+            background-color: white;
+            padding: 25px;
+        }
+
+        .video-section {
+            padding: 40px;
+            background-color: white;
+            text-align: center;
+        }
+
+        .video-box iframe,
+        .video-box video {
+            width: 80%;
+            height: 400px;
+            border: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #1f1f1f;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">MLK</div>
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Biografía</a>
+        <a href="#">Logros</a>
+        <a href="#">Influencia</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-text">
+        <h1>Martin Luther King Jr.</h1>
+        <p>
+            Líder social, pastor bautista y defensor incansable de la igualdad,
+            la justicia social y la resistencia pacífica.
+        </p>
+        <button onclick="mostrarMensaje()">Mensaje</button>
+    </div>
+</section>
+
+<section class="content">
+    <div class="left-column">
+        <img src="descarga-_2_.jpg" alt="Martin Luther King discurso">
+    </div>
+
+    <div class="right-column">
+        <h2>Biografía</h2>
+        <p>
+            Mi nombre es Martin Luther King Jr. y he dedicado mi vida a luchar por un mundo
+            más justo, donde todas las personas sean tratadas con dignidad y respeto.
+            Nací el 15 de enero de 1929 en Atlanta, Georgia, en una familia profundamente
+            comprometida con la fe cristiana y el servicio comunitario.
+        </p>
+        <p>
+            Desde joven comprendí que la injusticia racial no era solo un problema social,
+            sino una herida moral que afectaba a toda la humanidad. Estudié teología porque
+            creía que la fe debía ir acompañada de acción.
+        </p>
+        <p>
+            Mi liderazgo se basó siempre en la no violencia, demostrando que el amor y la
+            perseverancia pueden transformar una nación.
+        </p>
+    </div>
+</section>
+
+<section class="video-section">
+    <h2>Video histórico</h2>
+
+    <div class="video-box">
+        <!-- OPCIÓN 1: VIDEO DE YOUTUBE -->
+        <iframe 
+            src="PixVerse_V5.5_Image_Text_360P_Animar_esta_imag.mp4"
+            allowfullscreen>
+        </iframe>
+
+        <!-- OPCIÓN 2: VIDEO LOCAL (si tienes un .mp4)
+        <video controls>
+            <source src="video-mlk.mp4" type="video/mp4">
+            Tu navegador no soporta video.
+        </video>
+        -->
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Proyecto educativo – Martin Luther King Jr.</p>
+</footer>
+
+<script>
+    function mostrarMensaje() {
+        alert("La injusticia en cualquier lugar es una amenaza para la justicia en todas partes.");
+    }
+</script>
+
+</body>
+</html>
